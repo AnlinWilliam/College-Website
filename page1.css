@@ -1,0 +1,101 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #900790, #041861);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 36px;
+}
+
+.tab-container {
+    background-color: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 350px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    background-color: #320506;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px 6px 0 0;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    background-color: #e6ccd2;
+    color: #333;
+}
+
+.form-container {
+    position: relative;
+}
+
+.login-box {
+    display: none;
+    text-align: left;
+}
+
+.login-box.active {
+    display: block;
+}
+
+.login-box label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #620565;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #390524;
+    color: #333;
+}
